@@ -14,28 +14,6 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: 'FinTrack Dashboard',
-    description:
-      'A real-time personal finance tracker with interactive charts, budget goals, and spending insights. Built with React, Supabase, and Recharts.',
-    tags: ['React', 'TypeScript', 'Supabase', 'Recharts'],
-    image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    featured: true,
-    category: 'Web App',
-  },
-  {
-    title: 'Taskly – Team Kanban',
-    description:
-      'A collaborative Kanban board with drag-and-drop, real-time sync, role-based access, and file attachments. Handles 50+ daily active users.',
-    tags: ['Next.js', 'PostgreSQL', 'WebSockets', 'Tailwind'],
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    featured: true,
-    category: 'SaaS',
-  },
-  {
     title: 'Artfolio CMS',
     description:
       'A headless CMS + portfolio builder for artists and designers. Custom rich-text editor, image galleries, and one-click Vercel deploys.',
