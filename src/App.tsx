@@ -17,7 +17,7 @@ export default function App() {
     return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
-  if (route === '#certs') {
+  if (route.includes('certs')) {
     return (
       <div className="min-h-screen bg-rose-50 text-slate-600">
         <Navbar />
