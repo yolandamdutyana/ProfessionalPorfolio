@@ -10,7 +10,7 @@ export default function CertificationsPage() {
       <div className="max-w-5xl mx-auto">
         <header className="flex items-center justify-between mb-8">
           <h1 className="text-2xl font-semibold">Certifications</h1>
-          <a href="/" className="text-sm text-rose-600">← Back to home</a>
+          <a href="#" className="text-sm text-rose-600">← Back to home</a>
         </header>
 
         <p className="text-sm text-slate-500 mb-6">Browse certificates stored in public/certs. Click an image to open it or use download for original file.</p>
