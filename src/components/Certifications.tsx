@@ -23,12 +23,12 @@ export const certs: Cert[] = [
   },
   {
     title: 'React Developer Certification',
-    issuer: 'Front-End Academy',
-    date: '2025-02',
+    issuer: 'Coursera',
+    date: '2026-10',
     id: 'REACT-9876',
     badgeUrl: '/certs/react-badge.png',
     pdfUrl: '/certs/react-cert.pdf',
-    verifyUrl: '',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/XIQYDRI322EV',
   },
   {
     title: 'TypeScript Professional',
