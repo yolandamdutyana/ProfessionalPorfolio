@@ -27,7 +27,7 @@ export const certs: Cert[] = [
     date: '2026-10',
     id: 'REACT-9876',
     badgeUrl: '/certs/react-badge.png',
-    pdfUrl: '/certs/react-cert.pdf',
+    pdfUrl: 'public/certs/Coursera_MSOFFICE_365.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/XIQYDRI322EV',
   },
   {
