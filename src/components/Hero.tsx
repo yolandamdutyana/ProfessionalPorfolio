@@ -70,6 +70,7 @@ export default function Hero() {
           </button>
           <a
             href="/Yolanda_CV.pdf"
+            download="Yolanda_CV.pdf"
             className="flex items-center gap-2 px-7 py-3.5 rounded-xl border border-rose-200 text-slate-600 font-semibold hover:border-rose-300 hover:text-rose-500 hover:bg-rose-50 transition-all duration-300 hover:-translate-y-0.5"
           >
             <Download size={16} />
