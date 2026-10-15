@@ -4,7 +4,6 @@ import { MapPin, Coffee, Code, Heart } from 'lucide-react';
 const facts = [
   { icon: MapPin, text: 'Johannesburg, GP' },
   { icon: Coffee, text: 'Coffee-powered dev' },
-  { icon: Code, text: 'TypeScript advocate' },
   { icon: Heart, text: 'Open-source fan' },
 ];
 
