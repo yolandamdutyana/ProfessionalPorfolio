@@ -30,15 +30,7 @@ export const certs: Cert[] = [
     pdfUrl: 'public/certs/Coursera_MSOFFICE_365.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/XIQYDRI322EV',
   },
-  {
-    title: 'TypeScript Professional',
-    issuer: 'TypeSchool',
-    date: '2023-08',
-    id: 'TS-555',
-    badgeUrl: '/certs/ts-badge.png',
-    pdfUrl: '/certs/ts-cert.pdf',
-    verifyUrl: '',
-  },
+  
 ];
 
 export default function Certifications() {
