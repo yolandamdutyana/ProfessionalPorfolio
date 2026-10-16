@@ -18,7 +18,7 @@ export const certs: Cert[] = [
     date: '2026-08',
     id: 'ABC-12345',
     badgeUrl: '/certs/aws-badge.png',
-    pdfUrl: '/certs/aws-cert.pdf',
+    pdfUrl: '/certs/YolandaMdutyanaGoogleAIEssentials.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/specialization/6HUJOXU6PZN0',
   },
   {
