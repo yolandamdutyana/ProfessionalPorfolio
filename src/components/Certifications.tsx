@@ -18,7 +18,7 @@ export const certs: Cert[] = [
     date: '2026-08',
     id: 'ABC-12345',
     badgeUrl: '/certs/aws-badge.png',
-    pdfUrl: '/certs/YolandaMdutyanaGoogleAIEssentials.pdf',
+    pdfUrl: '/certs/YolandaMdutyanaGoogleAIEssentials_ProfessionalCertificate.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/specialization/6HUJOXU6PZN0',
   },
   {
@@ -29,6 +29,24 @@ export const certs: Cert[] = [
     badgeUrl: '',
     pdfUrl: 'public/certs/Coursera_MSOFFICE_365.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/XIQYDRI322EV',
+  },
+  {
+    title: 'Getting started with Microsoft Word',
+    issuer: 'Coursera',
+    date: '2026-10',
+    id: '',
+    badgeUrl: '',
+    pdfUrl: 'public/certs/Coursera S5JK0150CIDD.pdf',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/S5JK0150CIDD',
+  },
+  {
+    title: 'IoT Wireless & Cloud Computing Emerging Technologies',
+    issuer: 'Coursera',
+    date: '2026-10',
+    id: '',
+    badgeUrl: '',
+    pdfUrl: 'public/certs/IoT_Wireless_Cloud_Computing.pdf',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/8C6GD8CB5C63',
   },
   
 ];
