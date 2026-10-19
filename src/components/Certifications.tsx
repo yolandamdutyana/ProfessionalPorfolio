@@ -1,5 +1,14 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { X } from 'lucide-react';
+
+// Helper function for certificate file paths
+const certificateUrl = (filename: string) =>
+  `${import.meta.env.BASE_URL}${filename
+    .replace(/^\/+/, '')
+    .split('/')
+    .map(encodeURIComponent)
+    .join('/')}`;
 
 export interface Cert {
   title: string;
@@ -17,39 +26,33 @@ export const certs: Cert[] = [
     issuer: 'Coursera',
     date: '2026-08',
     id: 'ABC-12345',
-    badgeUrl: '/certs/aws-badge.png',
-    pdfUrl: '/certs/YolandaMdutyanaGoogleAIEssentials_ProfessionalCertificate.pdf',
+    badgeUrl: 'certs/aws-badge.png',
+    pdfUrl: 'certs/YolandaMdutyanaGoogleAIEssentials_ProfessionalCertificate.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/specialization/6HUJOXU6PZN0',
   },
   {
     title: 'Getting started with Microsoft Office 365',
     issuer: 'Coursera',
     date: '2026-10',
-    id: '',
-    badgeUrl: '',
-    pdfUrl: 'public/certs/Coursera_MSOFFICE_365.pdf',
+    pdfUrl: 'certs/Coursera_MSOFFICE_365.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/XIQYDRI322EV',
   },
   {
     title: 'Getting started with Microsoft Word',
     issuer: 'Coursera',
     date: '2026-10',
-    id: '',
-    badgeUrl: '',
-    pdfUrl: 'public/certs/Coursera S5JK0150CIDD.pdf',
+    pdfUrl: 'certs/Coursera S5JK0150CIDD.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/S5JK0150CIDD',
   },
   {
     title: 'IoT Wireless & Cloud Computing Emerging Technologies',
     issuer: 'Coursera',
     date: '2026-10',
-    id: '',
-    badgeUrl: '',
-    pdfUrl: 'public/certs/IoT_Wireless_Cloud_Computing.pdf',
+    pdfUrl: 'certs/IoT_Wireless_Cloud_Computing.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/8C6GD8CB5C63',
   },
-  
 ];
+
 
 export default function Certifications() {
   const [open, setOpen] = useState(false);
@@ -169,9 +172,15 @@ export default function Certifications() {
                         {c.verifyUrl && (
                           <a href={c.verifyUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-rose-600 underline">Verify</a>
                         )}
-                        {c.pdfUrl && (
-                          <a href={c.pdfUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-700">Download</a>
-                        )}
+                        {c.pdfUrl ? (
+                          <a 
+                            href={certificateUrl(c.pdfUrl)} 
+                            download 
+                            className="text-sm text-slate-700"
+                            >
+                            Download
+                          </a>
+                        ) : null}
                       </div>
                     </div>
                   </div>
