@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { Mail, MapPin, Send, Github, Linkedin, CheckCircle, AlertCircle } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
 
