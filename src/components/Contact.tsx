@@ -32,11 +32,33 @@ export default function Contact() {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
     setStatus('sending');
-    await new Promise((r) => setTimeout(r, 1500));
-    setStatus('success');
-    setForm({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setStatus('idle'), 5000);
+
+    try{
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          reply_to: form.email,
+          subject: form.subject || 'Portfolio contact enquiry',
+          message: form.message,
+        },
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      );
+
+      setStatus('success');
+      setForm({name: '', email: '', subject: '', message: ''});
+
+       setTimeout(() => setStatus('idle'), 5000);
+    } catch (error) {
+      console.error('EmailJS submission failed: ', error);
+      setStatus('error');
+    }
   };
+    
+   
 
   const inputClass =
     'w-full bg-rose-50 border border-rose-200 rounded-xl px-4 py-3 text-slate-700 placeholder-slate-400 text-sm focus:outline-none focus:border-rose-400 focus:ring-1 focus:ring-rose-300 transition-colors duration-200';
