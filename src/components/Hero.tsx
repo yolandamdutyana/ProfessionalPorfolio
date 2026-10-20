@@ -81,8 +81,8 @@ export default function Hero() {
         {/* Social links */}
         <div className="flex items-center justify-center gap-4 animate-fade-in-up opacity-0-init delay-500" style={{ animationFillMode: 'forwards' }}>
           {[
-            { icon: Github, href: 'https://github.com', label: 'GitHub' },
-            { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+            { icon: Github, href: 'https://github.com/yolandamdutyana/', label: 'GitHub' },
+            { icon: Linkedin, href: 'https://linkedin.com/yolandamdutyana', label: 'LinkedIn' },
             { icon: Mail, href: '#contact', label: 'Email' },
           ].map(({ icon: Icon, href, label }) => (
             <a
