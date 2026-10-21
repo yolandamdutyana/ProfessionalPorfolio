@@ -26,7 +26,7 @@ export const certs: Cert[] = [
     issuer: 'Coursera',
     date: '2026-08',
     id: 'ABC-12345',
-    badgeUrl: 'certs/aws-badge.png',
+    badgeUrl: 'certs/YolandaMdutyana_GoogleAIEssentials_ProfessionalCertificate.pdf',
     pdfUrl: 'certs/YolandaMdutyana_GoogleAIEssentials_ProfessionalCertificate.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/specialization/6HUJOXU6PZN0',
   },
@@ -178,7 +178,7 @@ export default function Certifications() {
                             download 
                             className="text-sm text-slate-700"
                             >
-                            Download
+                            View
                           </a>
                         ) : null}
                       </div>
