@@ -13,7 +13,7 @@ export default function CertificationsPage() {
           <a href="#" className="text-sm text-rose-600">← Back to home</a>
         </header>
 
-        <p className="text-sm text-slate-500 mb-6">Browse certificates stored in public/certs. Click an image to open it or use download for original file.</p>
+        <p className="text-sm text-slate-500 mb-6">Browse certificates stored in public/certs. Click an image to open it for original file.</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {certs.map((c) => (
@@ -39,7 +39,7 @@ export default function CertificationsPage() {
                     <a href={c.verifyUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-rose-600 underline">Verify</a>
                   )}
                   {c.pdfUrl && (
-                    <a href={normalize(c.pdfUrl)} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-700">Download</a>
+                    <a href={normalize(c.pdfUrl)} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-700">View</a>
                   )}
                 </div>
               </div>
