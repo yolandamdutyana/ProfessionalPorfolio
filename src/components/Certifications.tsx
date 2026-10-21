@@ -153,7 +153,7 @@ export default function Certifications() {
             </button>
 
             <h3 className="text-xl font-semibold mb-4">Certifications preview</h3>
-            <p className="text-sm text-slate-500 mb-4">A quick look at a few of my professional certifications. Click verify or download for more details.</p>
+            <p className="text-sm text-slate-500 mb-4">A quick look at a few of my professional certifications. Click verify or view for more details.</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {certs.slice(0, 3).map((c) => (
@@ -175,7 +175,7 @@ export default function Certifications() {
                         {c.pdfUrl ? (
                           <a 
                             href={certificateUrl(c.pdfUrl)} 
-                            download 
+                            view 
                             className="text-sm text-slate-700"
                             >
                             View
