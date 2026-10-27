@@ -46,8 +46,7 @@ export default function About() {
           <p className="text-slate-500 text-lg leading-relaxed mb-5 reveal opacity-0-init">
             Hey! I'm Yolanda — an aspiring software developer based in Johannesburg, passionate about building practical, user-friendly digital solutions. I work with technologies like React, TypeScript, Java, Python, and Kotlin, and I'm exploring the exciting fields of cybersecurity, cloud computing, artificial intelligence, and machine learning. I love turning ideas into meaningful projects while continuously learning, experimenting, and growing as a developer. </p>
           <p className="text-slate-500 leading-relaxed mb-8 reveal opacity-0-init">
-            I take on contract work, contribute to open source, and write 
-            about the things I'm learning at the intersection of engineering and product.
+           I take on contract work, build projects that bring ideas to life, and explore my interests in AI, machine learning, cybersecurity, and cloud computing while continuously growing as a developer.
           </p>
 
           {/* Fact chips */}
