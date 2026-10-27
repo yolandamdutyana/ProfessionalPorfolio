@@ -4,7 +4,7 @@ import { MapPin, Coffee, Code, Heart } from 'lucide-react';
 const facts = [
   { icon: MapPin, text: 'Johannesburg, GP' },
   { icon: Coffee, text: 'Coffee-powered dev' },
-  { icon: Heart, text: 'Open-source fan' },
+  { icon: Heart, text: 'AI & Machine Learning Enthusiast' },
 ];
 
 export default function About() {
@@ -44,10 +44,7 @@ export default function About() {
             <span className="text-gradient">great software</span>
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed mb-5 reveal opacity-0-init">
-            Hey! I'm Yolanda — a full-stack developer based in Johannesburg with 3+ years building 
-            products people actually love to use. I specialize in React, TypeScript, and Node.js, 
-            and I care deeply about performance, accessibility, and thoughtful design.
-          </p>
+            Hey! I'm Yolanda — an aspiring software developer based in Johannesburg, passionate about building practical, user-friendly digital solutions. I work with technologies like React, TypeScript, Java, Python, and Kotlin, and I'm exploring the exciting fields of cybersecurity, cloud computing, artificial intelligence, and machine learning. I love turning ideas into meaningful projects while continuously learning, experimenting, and growing as a developer. </p>
           <p className="text-slate-500 leading-relaxed mb-8 reveal opacity-0-init">
             I take on contract work, contribute to open source, and write 
             about the things I'm learning at the intersection of engineering and product.
