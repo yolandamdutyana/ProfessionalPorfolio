@@ -26,7 +26,7 @@ export const certs: Cert[] = [
     issuer: 'Coursera',
     date: '2026-08',
     id: '6HUJOXU6PZN0',
-    badgeUrl: 'certs/YolandaMdutyana_GoogleAIEssentials_ProfessionalCertificate.pdf',
+    badgeUrl: 'certs/YolandaMdutyana_GoogleAICertificate.jpg',
     pdfUrl: 'certs/YolandaMdutyana_GoogleAIEssentials_ProfessionalCertificate.pdf',
     verifyUrl: 'https://www.coursera.org/account/accomplishments/specialization/6HUJOXU6PZN0',
   },
