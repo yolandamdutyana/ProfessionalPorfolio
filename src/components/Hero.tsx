@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 
-const roles = ['Full-Stack Developer', 'UI/UX Enthusiast', 'Open Source Contributor', 'Problem Solver'];
+const roles = ['Full-Stack Developer', 'AI/ML Enthusiast', 'Open Source Contributor', 'Problem Solver', 'Cloud Curious'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
